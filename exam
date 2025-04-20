@@ -1,0 +1,73 @@
+import java.util.Scanner;
+public class exam {
+    public static void main(String[] args) {
+       
+       
+        
+        
+        
+        String s;
+        
+        
+        Scanner input = new Scanner(System.in);
+        
+        
+        do {
+            
+            
+            System.out.print("How many numbers will you enter? ");
+            
+            
+
+            int count = input.nextInt();
+            
+
+            double z = 0;
+            
+
+            for (int i = 1; i <= count; i++) {
+                
+                
+                
+                System.out.print("Enter score " + i + ": ");
+                
+                
+                double score = input.nextDouble();
+                
+                
+                z += score;
+                
+                
+            }
+            
+            
+
+            double average = z / count;
+            
+            
+
+            System.out.println("Average: " + average);
+            
+            
+
+            System.out.print("Do you want to enter another set of scores? (yes/no) ");
+            
+            
+
+                input.nextLine();
+            
+
+                s = input.nextLine();
+                
+                
+
+          } while (s.equalsIgnoreCase("yes"));
+          
+ 
+         System.out.println("No more scores to collect. Program done.");
+         
+    
+
+
+    }
+}
